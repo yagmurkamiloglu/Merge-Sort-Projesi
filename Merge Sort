@@ -1,0 +1,41 @@
+#MERGE SORT
+
+  [16,21,11,8,12,22] -> Merge Sort
+
+    A) Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+    
+      1) Merge Sort sıralanacak olan diziyi ikişer elemanı kalan parçalara
+      inene kadar sürekli olarak ikiye bölerek devam eder. Bu yüzden ilk 
+      aşamamızda dizimizi ikiye böleceğiz.
+      
+       [16,21,11]     [8,12,22]
+       
+      2) Sonraki aşamamızda yine ikiye bölme işlemi uygulayacağız. Böylelikle
+      elimizde en fazla iki elemanı bulunacak halde parçalamış olacağız.
+      
+       [16,21]   [11]   [8,12]   [22]
+       
+      3) Bu aşamamızda yine ikiye bölme işlemi uygulayarak her bir parçalanmış
+      dizimizin birer elemanlı olmasını sağlayacağız.
+      
+       [16]   [21]   [11]   [8]   [12]   [22]
+       
+      4) Şimdi ise parçalarımızı kendi içlerinde sıralayacağız. Bu aşamadan 
+      itibaren dizimizi birleştirmeye başlıyoruz.
+      
+       [16,21]   [11]   [8,12]   [22]
+       
+      5) Dizimizi birleştirmek için yeniden kendi aralarında sıralama yapıyoruz.
+      
+       [11,16,21]     [8,12,22]
+       
+      6) Son aşamamızda dizimizi tam anlamıyla sıralı bir biçimde birleştirip
+      ilk başta elimizde olan dizimizi yeniden elde ediyoruz.
+       
+       [8,11,12,16,21,22]
+     
+    B) Big-O gösterimini yazınız.
+    
+      O(nlogn)
+       
+      
